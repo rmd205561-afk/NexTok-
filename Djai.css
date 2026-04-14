@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-videos {
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    background-color: white;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; /* এই লাইনটি গুরুত্বপূর্ণ */
+    position: relative;
+}
+
+.video {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start; /* ভিডিওকে সেন্টারে লক করবে */
+    background-color: black;
+}
+
+.video-player {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* নিচের লেখা এবং আইকনগুলো */
+.footer {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.side-bar {
+    position: absolute;
+    bottom: 100px;
+    right: 10px;
+    color: white;
+    text-align: center;
+}
+
+.icon {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.icon p {
+    font-size: 12px;
+}
+
